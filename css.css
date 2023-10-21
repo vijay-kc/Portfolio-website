@@ -407,7 +407,7 @@ nav{
 }
 .shell{
   height: 15px;
-  width: 760px;
+  width: 90%;
   background-color: var(--text);
   /* border-radius: 20px; */
   padding-top: 3px;
