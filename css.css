@@ -800,6 +800,15 @@ footer p{
   .toggle-button{
     display: block;
   }
+  .shell{
+    width: 400px;
+   }
+   .grid-about{
+    display:block;
+  }
+  .grid-about{
+    margin-left: 10%;
+  }
 }
 
 
