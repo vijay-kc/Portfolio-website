@@ -747,12 +747,12 @@ footer p{
 
 
 
-@media screen and (max-width:920px) {
+/* @media screen and (max-width:920px) {
   .grid-home{
     display:block;
   }
   
-}
+} */
 
 
 
@@ -800,6 +800,9 @@ footer p{
   .toggle-button{
     display: block;
   }
+  .text1{
+    margin-left: 10%;
+  }
   .text1 h5{
     font-size: 18px;
     color: var(--text);
@@ -812,12 +815,15 @@ footer p{
     color: var(--theme);
   }
   .hr img{
-    margin-left: 0;
-   padding-left: 0%;
+    /* margin-left: 50px;
+   padding-left: 0%; */
+   display:none;
   }
   .grid-about{
     display: block;
+    margin-left: 5px;
   }
+  
   .skill-head h4{
     font-size: 20px;
   }
@@ -828,8 +834,8 @@ footer p{
     font-size: 50px;
   }
   .skill{
-    /* display: inline-block; */
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 0px;
   }
   .lang.active{
     margin-left: 10px;
