@@ -747,12 +747,15 @@ footer p{
 
 
 
-/* @media screen and (max-width:920px) {
+@media screen and (max-width:920px) {
   .grid-home{
     display:block;
   }
+  .hr img{
+   display:none;
+  }
   
-} */
+}
 
 
 
