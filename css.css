@@ -762,7 +762,7 @@ footer p{
     height: 70px;
   }
   .navlogo{
-    width: 70%;
+    width: 80%;
     height: 70px;
     background-color: var(--bg);
     z-index: 20;
@@ -800,14 +800,46 @@ footer p{
   .toggle-button{
     display: block;
   }
-  .shell{
-    width: 400px;
-   }
-   .grid-about{
-    display:block;
+  .text1 h5{
+    font-size: 18px;
+    color: var(--text);
+  }
+  .text1 h2{
+    font-size: 45px;
+  }
+  #element{
+    font-size: 30px;
+    color: var(--theme);
+  }
+  .hr img{
+    margin-left: 0;
+   padding-left: 0%;
   }
   .grid-about{
-    margin-left: 10%;
+    display: block;
+  }
+  .skill-head h4{
+    font-size: 20px;
+  }
+  .skill-head{
+    margin-left: 20px;
+  }
+  .g-project h2{
+    font-size: 50px;
+  }
+  .skill{
+    /* display: inline-block; */
+    margin-left: 10px;
+  }
+  .lang.active{
+    margin-left: 10px;
+  }
+  .shell{
+    width: 330px;
+    margin-left: 1px;
+  }
+  form input,form textarea{
+    width: 320px;
   }
 }
 
