@@ -94,8 +94,8 @@ hskill.addEventListener('click', function() {
 
 
 function resetForm(){
-  const form = document.getElementById("form");
+  const form1 = document.getElementById("form");
   setTimeout(function(){
-      form.reset();
+      form1.reset();
   }, 5000);
 }
