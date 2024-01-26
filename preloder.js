@@ -1,7 +1,7 @@
-window.addEventListener('load', function() {
-  // Select the preloader element
-  var preloader = document.getElementById('preloader');
+// Select the preloader element
 
+var loader = document.getElementById('preloader');
+window.addEventListener('load', function() {
   // Hide the preloader once the page is fully loaded
-  preloader.style.display = 'none';
+  loader.style.display = "none";
 });
