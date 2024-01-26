@@ -20,7 +20,14 @@
   --contact: #999;
   --service: #BBB;
 }
-
+#preloader{
+  background: #000 url(loader.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh ;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 html{
   scroll-behavior: smooth;
   overflow-x: auto;
@@ -112,7 +119,7 @@ nav{
 .rnav i{
   font-size: 25px;
   color: var(--text);
-  margin-right: 10px;
+  padding-right: 10px;
   margin-top: 18px;
   cursor: pointer;
 }
@@ -121,7 +128,7 @@ nav{
   height: 50px;
   width: 50px;
   margin-top: -3px;
-  margin-right: 10px;
+  /* margin-right: 0px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +181,7 @@ nav{
 .toggle-button.clicked .bar:nth-child(3){
   transform: translate(1px,-1px) rotate(45deg);
 }
-
+/* ----------------HOME--------------------------- */
 #home{
   margin-bottom: 100px;
   padding-top: 60px;
@@ -188,7 +195,7 @@ nav{
 
 .text1{
   padding-top: 200px;
-  margin-left: 60px;
+  margin-left: 5vw;
 }
 
 .text1 h5{
@@ -217,29 +224,32 @@ nav{
   color: var(--theme);
 }
 .hr img{
-  width: 65%;
-  padding-top: 40px;
-  margin-top: 8%;
+  width: 85%;
+  /* padding-top: 40px; */
+  margin-top: 5%;
 }
+
+/* ------------------about------------------------- */
 #about{
   padding-top: 100px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+
 }
 .grid-about{
   width: 90%;
   height: 80%;
   display: grid;
   grid-template-columns: 360px 1fr;
-  margin-left: 4%;
+  margin-left: 3%;
 }
 .box{
   position: relative;
-  width: 350px;
-  height: 550px;
+  width: 370px;
+  height: 500px;
   background: repeating-conic-gradient(from var(--a),#ff2770 0%,#ff2770 5%,transparent 5%,transparent 40%, #ff2770 50%);
   animation: animate 4s linear infinite;
-  border-radius: 20px;
-
+  border-radius: 30px;
+ 
 }
 @property --a{ 
   syntax: '<angle>';
@@ -263,19 +273,18 @@ nav{
   background: repeating-conic-gradient( from var(--a),#45f3ff 0%,#45f3ff  5%,transparent 5%,transparent 40%, #45f3ff  50%);
   animation: animate 4s linear infinite;
   animation-delay: -1s;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .box::after{
   content: '';
   position: absolute;
   inset: 4px;
-  background:url(dp.jpg);
+  background:url(vijay.jpg);
   /* width: 334px; */
   /* height: 540px; */
-  border-radius: 15px;
+  border-radius: 25px;
   border: 4px var(--bg) solid;
 }
-
 
 .title{
   font-size: 60px;
@@ -294,7 +303,7 @@ nav{
   color: var(--text);
 }
 .about-text{
-  margin-left: 5%;
+  margin-left: 8%;
 }
 .more1{
   border: 2px solid var(--theme);
@@ -314,8 +323,11 @@ nav{
   background-color: var(--theme);
   color: #ffffff;
 }
+
+/* ------------------skill------------------------- */
+
 #skill{
-  /* padding-top: 100px; */
+  padding-top: 100px;
   margin-bottom:100px ;
 }
 .title1{
@@ -327,8 +339,8 @@ nav{
   margin-bottom: 20px;
 }
 .h-skill{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   cursor: pointer;
   /* font-size: 40px; */
 }
@@ -339,7 +351,7 @@ nav{
 }
 .skill-head{
   display: flex;
-  margin-right: 40px;
+  margin-right: 5vw;
 }
 .skill-head h4{
   color: var(--text);
@@ -367,7 +379,7 @@ nav{
   }
 }
 .skill h5{
-  padding-left: 30px;
+  padding-left: 2vw;
   color: var(--theme);
   margin-top: 10px;
   font-size: 30px;
@@ -377,7 +389,7 @@ nav{
   margin-top: 30px;
 }
 .skill p {
-  padding-left: 30px;
+  padding-left: 4vw;
   font-size: 18px;
   color: var(--text);
   font-weight: 300;
@@ -394,18 +406,21 @@ nav{
 }
 .lang.active{
   display: inline-block;
-  margin-top: 30px;
-  margin-left: 60px;
+  /* margin-top: 30px;
+  margin-left: 60px; */
+  width: 100vw;
 
 }
+
 .f-s h5{
   font-size: 30px;
   font-weight: 500px;
   color: var(--theme);
-  padding-left: 10px;
+  padding-left: 50px;
   margin-top: 40px;
 }
 .shell{
+  margin: 5px auto;
   height: 15px;
   width: 90%;
   background-color: var(--text);
@@ -417,7 +432,7 @@ nav{
 }
 #html{
   height: 12px;
-  width: 95%;
+  width: 90%;
   background-color: #ff0000;
   border-radius: 0 20px 20px 0;
   margin-left: 3px;
@@ -425,7 +440,7 @@ nav{
 }
 #css{
   height: 12px;
-  width: 83%;
+  width: 78%;
   background-color: #5413df;
   border-radius:0 20px 20px 0;
   margin-left: 3px;
@@ -441,7 +456,7 @@ nav{
 }
 #py{
   height: 12px;
-  width: 45%;
+  width: 59%;
   background-color: #ec0ebf;
   border-radius: 0 20px 20px 0;
   margin-left: 3px;
@@ -460,7 +475,7 @@ nav{
     width: 0%;
   }
   100%{
-    width: 95%;
+    width: 90%;
   }
 }
 @keyframes css {
@@ -468,7 +483,7 @@ nav{
     width: 0%;
   }
   100%{
-    width: 83%;
+    width: 78%;
   }
 }
 @keyframes js {
@@ -484,7 +499,7 @@ nav{
     width: 0%;
   }
   100%{
-    width: 45%;
+    width: 59%;
   }
 }
 @keyframes cpp {
@@ -496,6 +511,7 @@ nav{
   }
 }
 
+/* ------------------project------------------------- */
 
 #project{
   padding-top: 20px;
@@ -615,7 +631,7 @@ nav{
 
 
 
-
+/* --------------------contact----------------------- */
 
 
 #contact{
@@ -626,6 +642,7 @@ nav{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 .contact-left{
   flex-basis: 35%;
@@ -638,6 +655,9 @@ nav{
 }
 .contact-left a{
 text-decoration: none;
+}
+.sec{
+  color: var(--theme);
 }
 .contact-left h5{
   width: 90%;
@@ -696,9 +716,9 @@ color: #ec0ebf;
   margin-top: 40px;
   border-radius: 20px;
 }
-.contact-right form{
-  width: 100%;
-}
+/* .contact-right form{
+  width: 100vw;
+} */
 .contact-right label{
   /* padding-left: 0; */
   visibility: hidden;
@@ -713,10 +733,11 @@ form input,form textarea{
   outline: none;
   background-color: var(--contact);
   padding: 10px;
-  margin: 5px;
+  /* margin: 5px; */
   color: var(--text);
   font-size: 18px;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
 .btn{
   border: 2px solid var(--theme);
@@ -729,6 +750,8 @@ form input,form textarea{
   cursor: pointer;
   font-size: 15px;
 }
+
+
 .btn:hover{
   background-color: var(--theme);
   color:#ffffff;
@@ -747,14 +770,18 @@ footer p{
 
 
 
-@media screen and (max-width:920px) {
-  .grid-home{
+@media screen and (max-width:1220px) {
+  /* .grid-home{
     display:block;
+  } */
+  .grid-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .hr img{
-   display:none;
+    display: none;
   }
-  
 }
 
 
@@ -772,14 +799,14 @@ footer p{
   }
   .navlogo img{
     height: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .navlogo h1{
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 10px;
   }
   .navlogo h1::first-letter{
-    font-size: 30px;
+    font-size: 40px;
   }
   .nscroll{
     flex-direction: column;
@@ -803,57 +830,120 @@ footer p{
   .toggle-button{
     display: block;
   }
-  .text1{
-    margin-left: 10%;
+  .grid-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title1{
+    font-size: 40px;
+  }
+
+
+
+
+
+
+  .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .text1 h5{
     font-size: 18px;
     color: var(--text);
+    /* padding-left: 10px; */
   }
   .text1 h2{
     font-size: 45px;
+    /* margin-left: 10px; */
   }
   #element{
     font-size: 30px;
     color: var(--theme);
   }
   .hr img{
-    /* margin-left: 50px;
-   padding-left: 0%; */
-   display:none;
+    margin-left: 0;
+   padding-left: 0%;
+   display: none;
   }
   .grid-about{
     display: block;
     margin-left: 5px;
+    align-items: center;
   }
-  
+
+
+
+
+
+
+
   .skill-head h4{
-    font-size: 20px;
+    font-size: 30px;
   }
-  .skill-head{
-    margin-left: 20px;
-  }
+  /* .skill-head{
+    margin-left: 3vw;
+  } */
   .g-project h2{
     font-size: 50px;
   }
-  .skill{
-    display: inline-block;
-    margin-left: 0px;
+  .skill-head{
+    /* display: inline-block; */
+    margin-left: 3vm !important;
   }
   .lang.active{
     margin-left: 10px;
   }
   .shell{
-    width: 330px;
-    margin-left: 1px;
+    width: 90%;
+   margin: auto;
   }
-  form input,form textarea{
-    width: 320px;
+  
+
+  .c {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  form {
+    width: 90vw;
+    /* margin-right: 5px; */
+    /* margin: 5px; */
+
+  }
+
+  input, textarea {
+    width: 90vw !important;
+  }
+
+  button {
+    align-items: center;
   }
 }
 
 
 
+@media only screen and  (max-width:880px){
 
+  .c {
+    flex-direction: column;
+    width: 95vw;
+  }
 
-  
+  form {
+    width: 90vw;
+    margin: auto;
+    /* margin-right: 5px; */
+    /* margin: 5px; */
+
+  }
+
+  input, textarea {
+    width: 90vw !important;
+  }
+
+  button {
+    align-items: center;
+  }
+}
