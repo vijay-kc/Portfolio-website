@@ -32,4 +32,4 @@ If you would like to contribute to the improvement of this portfolio website tem
 
 
 Feel free to reach out if you have any questions or need further assistance in setting up your portfolio website. Good luck showcasing your work!<br>
-Check it out : https://vijaykc-portfolio.netlify.app/
+Check it out :https://vijay-kc.github.io/Portfolio-website/
